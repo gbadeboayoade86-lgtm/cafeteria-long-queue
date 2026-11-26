@@ -2,13 +2,11 @@ Product Requirements Document (PRD): Campus Cafeteria Queue and Order Management
 1. Introduction
 The Campus Cafeteria Queue and Order Management System is a proposed web-based platform for students and authorized cafeteria staff to browse menus, place pre-orders, join virtual queues, track order preparation statuses, and manage meal pickups.
 The first version will focus on the backend and the essential digital queuing and order-handling process.
-
 2. Product Overview
 Product Name: Campus Cafeteria Queue and Order Management System (QueueSmart Babcock)
 Overview: A campus dining queue-management and pre-order platform for Babcock University students and cafeteria staff to reduce peak-hour congestion, display live wait times, and streamline meal pickup.
 3. Problem Statement
 During peak meal hours, students face severe congestion and long wait times in Babcock cafeteria lines, often missing classes or study time. Meanwhile, cafeteria staff struggle with unpredictable demand spikes and serving-line bottlenecks.
-
 4. Business Objectives vs. User Needs
 Business Objectives: Reduce peak-hour wait times, smooth kitchen demand spikes, and improve dining throughput.
 User Needs: Check live wait times or pre-order meals before arriving, pick up food quickly between lectures, and manage serving flow without crowding.
@@ -19,19 +17,16 @@ Stakeholders: Cafeteria management, kitchen staff, students, university administ
 Story 1: Check Live Queue / Wait Time
 User Story: As a student, I want to view current cafeteria queue status and estimated wait times so I can decide when to go eat.
 Acceptance Criteria:
-
 Authenticated students can view live queue status and estimated wait times per station with a last-updated timestamp.
 Unavailable or stale data displays a clear fallback message.
 Story 2: Pre-Order Meal for Pickup
 User Story: As a student, I want to pre-order a meal and choose a pickup window so I can skip the main ordering line.
 Acceptance Criteria:
-
 Authenticated students can select available menu items (quantity > 0) and an open pickup slot.
 Invalid or out-of-stock selections return clear errors; valid orders generate a unique pickup reference.
 Story 3: Update Order & Queue Status
 User Story: As cafeteria staff, I want to update queue levels and mark orders as ready so students arrive on time.
 Acceptance Criteria:
-
 Only authorized staff can modify queue levels and order statuses.
 Updates reflect promptly without corrupting active orders.
 7. Functional Requirements
@@ -60,12 +55,7 @@ Success Metrics: Daily active users/pre-orders, reduction in average wait time, 
 11. Assumptions & Open Questions
 Assumptions: Cafeteria staff have access to a tablet or counter device during service hours.
 Open Questions:
-
-1.
 How will payments work (in-app wallet, campus meal card, or express-lane POS)?
-2.
 How is queue length tracked (manual staff toggle, order volume pacing, or physical check-ins)?
-3.
 What is the policy for missed pickup windows (hold duration/cancellations)?
-4.
 Which cafeteria halls/stations launch in Phase 1?
